@@ -19,34 +19,30 @@ TeamFlow is a collaborative task and project management platform built with a la
 ## 📂 Project Structure
 
 src/
-├── controller/
-│ ├── AuthController.java
-│ ├── ProjectController.java
-│ ├── TaskController.java
-│ ├── UserController.java
-│ └── DashboardController.java
-│
-├── service/
-│ ├── UserService.java
-│ ├── ProjectService.java
-│ └── TaskService.java
-│
-├── repository/
-│ ├── UserRepository.java
-│ ├── ProjectRepository.java
-│ └── TaskRepository.java
-│
-├── security/
-│ ├── JwtAuthFilter.java
-│ ├── JwtService.java
-│ └── RoleBasedAuthConfig.java
-│
-└── model/
-├── User.java
-├── Project.java
-├── Task.java
-├── Role.java
-└── UserRole.java
+├── controller
+│   ├── AuthController.java
+│   ├── DashboardController.java
+│   ├── ProjectController.java
+│   ├── TaskController.java
+│   └── UserController.java
+├── model
+│   ├── Project.java
+│   ├── Role.java
+│   ├── Task.java
+│   ├── User.java
+│   └── UserRole.java
+├── repository
+│   ├── ProjectRepository.java
+│   ├── TaskRepository.java
+│   └── UserRepository.java
+├── security
+│   ├── JwtAuthFilter.java
+│   ├── JwtService.java
+│   └── RoleBasedAuthConfig.java
+└── service
+    ├── ProjectService.java
+    ├── TaskService.java
+    └── UserService.java
 
 
 ---
